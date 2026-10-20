@@ -1,0 +1,21 @@
+{
+	"name": "a11y-content-checker",
+	"version": "0.1.0",
+	"private": true,
+	"description": "WordPress plugin that checks content accessibility while it is written.",
+	"license": "GPL-2.0-or-later",
+	"author": "Anderson Canale Garcia",
+	"repository": "github:andersongarcia/a11y-content-checker",
+	"scripts": {
+		"postinstall": "node -e \"const fs=require('fs');fs.mkdirSync('vendor/axe-locales',{recursive:true});fs.copyFileSync('node_modules/axe-core/axe.min.js','vendor/axe.min.js');for(const f of ['pt_BR.json','es.json'])fs.copyFileSync('node_modules/axe-core/locales/'+f,'vendor/axe-locales/'+f)\"",
+		"dev:up": "docker compose -f dev/docker-compose.yml up -d",
+		"dev:install": "docker compose -f dev/docker-compose.yml run --rm cli sh /scripts/install.sh",
+		"dev:stop": "docker compose -f dev/docker-compose.yml stop",
+		"wp": "docker compose -f dev/docker-compose.yml run --rm cli wp",
+		"check": "docker compose -f dev/docker-compose.yml run --rm cli wp --url=http://localhost:8888/demo/ a11ycc check",
+		"i18n": "docker compose -f dev/docker-compose.yml run --rm -w /var/www/html/wp-content/plugins/a11y-content-checker cli sh -c \"wp i18n make-pot . languages/a11y-content-checker.pot --exclude=node_modules,vendor,dev && wp i18n make-mo languages && wp i18n make-json languages --no-purge\""
+	},
+	"dependencies": {
+		"axe-core": "4.10.2"
+	}
+}

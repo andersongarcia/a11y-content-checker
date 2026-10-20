@@ -1,0 +1,227 @@
+# Copyright (C) 2026 Anderson Canale Garcia
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: A11y Content Checker 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/a11y-content-checker\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-20T12:00:37+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: a11y-content-checker\n"
+"Language: pt_BR\n"
+
+#. Plugin Name of the plugin
+#: a11y-content-checker.php
+msgid "A11y Content Checker"
+msgstr "A11y Content Checker"
+
+#. Plugin URI of the plugin
+#: a11y-content-checker.php
+msgid "https://github.com/andersongarcia/a11y-content-checker"
+msgstr ""
+
+#. Description of the plugin
+#: a11y-content-checker.php
+msgid "Checks the accessibility of content while it is written and shows authors what to fix, with rules mapped to WCAG 2.2 and ABNT NBR 17225."
+msgstr "Verifica a acessibilidade do conteúdo enquanto ele é produzido e mostra a quem publica o que corrigir, com regras ligadas às WCAG 2.2 e à ABNT NBR 17225."
+
+#. Author of the plugin
+#: a11y-content-checker.php
+msgid "Anderson Canale Garcia"
+msgstr ""
+
+#. Author URI of the plugin
+#: a11y-content-checker.php
+msgid "https://github.com/andersongarcia"
+msgstr ""
+
+#: includes/class-admin.php:21
+#: includes/class-admin.php:51
+#: assets/editor.js:46
+msgid "Accessibility"
+msgstr "Acessibilidade"
+
+#: includes/class-admin.php:34
+msgid "Not checked"
+msgstr "Não verificado"
+
+#: includes/class-admin.php:38
+msgid "No automatic issues"
+msgstr "Sem pendências automáticas"
+
+#. translators: 1: number of errors, 2: number of warnings
+#: includes/class-admin.php:42
+#, php-format
+msgid "%1$d error(s), %2$d warning(s)"
+msgstr "%1$d erro(s), %2$d aviso(s)"
+
+#: includes/class-admin.php:50
+#: includes/class-admin.php:72
+msgid "Content accessibility"
+msgstr "Acessibilidade do conteúdo"
+
+#: includes/class-admin.php:73
+msgid "Posts with issues found by the automatic check. It does not replace a human review."
+msgstr "Publicações com pendências encontradas pela verificação automática. Ela não substitui a revisão humana."
+
+#: includes/class-admin.php:75
+msgid "Posts with issues"
+msgstr "Publicações com pendências"
+
+#: includes/class-admin.php:77
+msgid "Post"
+msgstr "Publicação"
+
+#: includes/class-admin.php:78
+msgid "Issues"
+msgstr "Pendências"
+
+#: includes/class-admin.php:79
+msgid "Rules"
+msgstr "Regras"
+
+#: includes/class-checker.php:27
+msgid "Image without alternative text. Describe the image or mark it as decorative."
+msgstr "Imagem sem texto alternativo. Descreva a imagem ou marque-a como decorativa."
+
+#: includes/class-checker.php:28
+msgid "The alternative text looks like a file name. Describe what the image shows."
+msgstr "O texto alternativo parece ser o nome do arquivo. Descreva o que a imagem mostra."
+
+#: includes/class-checker.php:29
+msgid "Link without text. Screen reader users cannot tell where it goes."
+msgstr "Link sem texto. Quem usa leitor de tela não sabe para onde ele leva."
+
+#: includes/class-checker.php:30
+msgid "Generic link text. Use the destination as the text, for example \"VPN request form\"."
+msgstr "Texto de link genérico. Use o destino como texto, por exemplo \"Formulário de solicitação de VPN\"."
+
+#: includes/class-checker.php:31
+msgid "Link to a file without its format and size in the text, for example \"User guide (PDF, 2 MB)\"."
+msgstr "Link para arquivo sem formato e tamanho no texto, por exemplo \"Manual de uso (PDF, 2 MB)\"."
+
+#: includes/class-checker.php:32
+msgid "Skipped heading level. Headings should follow their order, without jumping from H2 to H4."
+msgstr "Nível de título pulado. Os títulos devem seguir a ordem, sem saltar de H2 para H4."
+
+#: includes/class-checker.php:33
+msgid "More than one H1 in the content. A page should have a single main heading."
+msgstr "Mais de um H1 no conteúdo. A página deve ter um único título principal."
+
+#: includes/class-checker.php:34
+msgid "Bold paragraph used as a heading. Use a heading style (H2, H3) from the editor."
+msgstr "Parágrafo em negrito usado como título. Use o estilo de título (H2, H3) do editor."
+
+#: includes/class-checker.php:35
+msgid "Long passage in capital letters, which is harder to read and may be spelled out by some screen readers."
+msgstr "Trecho longo todo em maiúsculas, que é mais difícil de ler e alguns leitores de tela soletram."
+
+#: includes/class-checker.php:36
+msgid "Table without a header row or column."
+msgstr "Tabela sem linha ou coluna de cabeçalho."
+
+#: includes/class-checker.php:37
+msgid "Embedded content without a title. Say what it contains."
+msgstr "Conteúdo incorporado sem título. Informe o que ele contém."
+
+#: includes/class-checker.php:38
+msgid "Embedded video. Check that it has reviewed captions, not only automatic ones."
+msgstr "Vídeo incorporado. Confira se ele tem legendas revisadas, não só as automáticas."
+
+#: includes/class-checker.php:39
+msgid "Post with an image and little text. If the image is a poster, repeat its text in the post."
+msgstr "Publicação com imagem e pouco texto. Se a imagem for um cartaz, repita o texto dele na publicação."
+
+#: includes/class-review.php:29
+msgid "Check accessibility"
+msgstr "Verificar acessibilidade"
+
+#: assets/editor.js:27
+#: assets/review.js:84
+msgid "Checking…"
+msgstr "Verificando…"
+
+#: assets/editor.js:29
+msgid "The check could not run right now."
+msgstr "Não foi possível verificar agora."
+
+#: assets/editor.js:31
+msgid "No automatic issues. Review the checklist too."
+msgstr "Nenhuma pendência automática. Confira também o checklist."
+
+#. translators: %d: number of issues
+#: assets/editor.js:35
+#, js-format
+msgid "%d issue(s) found:"
+msgstr "%d pendência(s) encontrada(s):"
+
+#: assets/editor.js:39
+#: assets/review.js:43
+msgid "Error:"
+msgstr "Erro:"
+
+#: assets/editor.js:40
+#: assets/review.js:44
+msgid "Warning:"
+msgstr "Aviso:"
+
+#: assets/editor.js:49
+msgid "Publishing checklist (opens in a new tab)"
+msgstr "Checklist de publicação (abre em nova aba)"
+
+#: assets/review.js:31
+msgid "Nothing found."
+msgstr "Nada encontrado."
+
+#. translators: %d: occurrence number
+#: assets/review.js:56
+#, js-format
+msgid "Show occurrence %d"
+msgstr "Mostrar ocorrência %d"
+
+#: assets/review.js:64
+msgid "How to fix (opens in a new tab)"
+msgstr "Como corrigir (abre em nova aba)"
+
+#: assets/review.js:81
+msgid "Accessibility of this page"
+msgstr "Acessibilidade desta página"
+
+#: assets/review.js:82
+msgid "Close"
+msgstr "Fechar"
+
+#. translators: 1: number of problems, 2: number of items to review manually
+#: assets/review.js:97
+#, js-format
+msgid "%1$d problem(s) and %2$d item(s) to review manually."
+msgstr "%1$d problema(s) e %2$d item(ns) para conferir à mão."
+
+#: assets/review.js:99
+msgid "Content, checked on save"
+msgstr "Conteúdo, verificado ao salvar"
+
+#: assets/review.js:100
+msgid "Page, problems found now"
+msgstr "Página, problemas encontrados agora"
+
+#: assets/review.js:101
+msgid "Review manually"
+msgstr "Para conferir à mão"
+
+#: assets/review.js:102
+msgid "Automatic checks find only part of the problems."
+msgstr "A verificação automática encontra só parte dos problemas."
+
+#: assets/review.js:104
+msgid "Use the publishing checklist too."
+msgstr "Use também o checklist de publicação."
+
+#: assets/review.js:108
+msgid "The check could not run on this page."
+msgstr "Não foi possível rodar a verificação nesta página."

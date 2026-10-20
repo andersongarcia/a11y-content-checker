@@ -1,0 +1,6 @@
+node_modules/
+vendor/
+
+# Local environment
+dev/.env
+dev/plugins/
